@@ -1,0 +1,80 @@
+{
+  "model": "KLUE-RoBERTa multitask",
+  "macro_f1": 0.6231841768518097,
+  "accuracy": 0.9291666666666667,
+  "mention_f1": 0.8247335234820066,
+  "overall_macro_f1": 0.8511875235619755,
+  "overall_accuracy": 0.9166666666666666,
+  "overall_f1_neg": 0.7524752475247525,
+  "test_label_source": "llm",
+  "per_aspect": {
+    "graphics": {
+      "macro_f1": 0.7255,
+      "accuracy": 0.97,
+      "mention_f1": 0.9062
+    },
+    "performance": {
+      "macro_f1": 0.4944,
+      "accuracy": 0.9633,
+      "mention_f1": 0.8
+    },
+    "story": {
+      "macro_f1": 0.5664,
+      "accuracy": 0.93,
+      "mention_f1": 0.8381
+    },
+    "gameplay": {
+      "macro_f1": 0.6289,
+      "accuracy": 0.7467,
+      "mention_f1": 0.8757
+    },
+    "controls": {
+      "macro_f1": 0.7807,
+      "accuracy": 0.9733,
+      "mention_f1": 0.8125
+    },
+    "sound": {
+      "macro_f1": 0.5741,
+      "accuracy": 0.9867,
+      "mention_f1": 0.7692
+    },
+    "price": {
+      "macro_f1": 0.55,
+      "accuracy": 0.9567,
+      "mention_f1": 0.8
+    },
+    "operation": {
+      "macro_f1": 0.6656,
+      "accuracy": 0.9067,
+      "mention_f1": 0.7961
+    }
+  },
+  "ablation_aspect_only": {
+    "macro_f1": 0.6407731856024003,
+    "accuracy": 0.9279166666666667,
+    "mention_f1": 0.8339972816276544
+  },
+  "human_subset_n": 300,
+  "human_subset": {
+    "LLM 라벨 (검수 라벨 대비)": {
+      "macro_f1": 0.9797,
+      "accuracy": 0.9917,
+      "mention_f1": 0.9758
+    },
+    "Baseline: TF-IDF + LR": {
+      "macro_f1": 0.4887,
+      "accuracy": 0.8883,
+      "mention_f1": 0.6019
+    },
+    "KLUE-RoBERTa (속성 단독)": {
+      "macro_f1": 0.6251,
+      "accuracy": 0.9242,
+      "mention_f1": 0.8147
+    },
+    "KLUE-RoBERTa 멀티태스크 (제안)": {
+      "macro_f1": 0.6069,
+      "accuracy": 0.9254,
+      "mention_f1": 0.8053
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# 학습·노트북 (Colab T4 기준: torch 2.14.1+cu130, transformers 5.22.1)
+torch
+transformers
+huggingface_hub
+scikit-learn
+pandas
+numpy
+matplotlib
+joblib
+requests
+ipywidgets
+# 서비스는 app/requirements.txt (+ gradio)

@@ -1,0 +1,69 @@
+{
+  "model": "TF-IDF(char 2-4) + LogisticRegression",
+  "test_label_source": "llm",
+  "macro_f1": 0.4916211202414753,
+  "accuracy": 0.8904166666666667,
+  "mention_f1": 0.5921407537596614,
+  "per_aspect": {
+    "graphics": {
+      "macro_f1": 0.3815,
+      "accuracy": 0.9133,
+      "mention_f1": 0.5098
+    },
+    "performance": {
+      "macro_f1": 0.4285,
+      "accuracy": 0.9567,
+      "mention_f1": 0.7742
+    },
+    "story": {
+      "macro_f1": 0.5865,
+      "accuracy": 0.91,
+      "mention_f1": 0.7677
+    },
+    "gameplay": {
+      "macro_f1": 0.5119,
+      "accuracy": 0.66,
+      "mention_f1": 0.787
+    },
+    "controls": {
+      "macro_f1": 0.4737,
+      "accuracy": 0.95,
+      "mention_f1": 0.4
+    },
+    "sound": {
+      "macro_f1": 0.7449,
+      "accuracy": 0.98,
+      "mention_f1": 0.5
+    },
+    "price": {
+      "macro_f1": 0.3308,
+      "accuracy": 0.9367,
+      "mention_f1": 0.3704
+    },
+    "operation": {
+      "macro_f1": 0.4751,
+      "accuracy": 0.8167,
+      "mention_f1": 0.6281
+    }
+  },
+  "best_C": {
+    "graphics": 10,
+    "performance": 1,
+    "story": 1,
+    "gameplay": 0.3,
+    "controls": 10,
+    "sound": 1,
+    "price": 10,
+    "operation": 0.1
+  },
+  "overall_macro_f1": 0.8292544109277178,
+  "overall_accuracy": 0.9066666666666666,
+  "overall_f1_neg": 0.7142857142857143,
+  "overall_best_C": 30,
+  "human_subset_n": 300,
+  "human_subset": {
+    "macro_f1": 0.4886536164310719,
+    "accuracy": 0.8883333333333334,
+    "mention_f1": 0.6018583178601613
+  }
+}

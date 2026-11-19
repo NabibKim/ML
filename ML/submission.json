@@ -1,0 +1,11 @@
+{
+  "student_id": "202235210",
+  "name": "김남엽",
+  "title": "Steam 한국어 리뷰 속성별 감성 분석 (ABSA) 및 게임 평판 분석 서비스",
+  "github_url": "https://github.com/NabibKim/ML",
+  "demo_url": "https://huggingface.co/spaces/nabib-kim/steam-ko-review-analyzer",
+  "data_type": "text (Steam 한국어 게임 리뷰, 직접 수집 14,909건 → 정제 11,177건, 속성 라벨 2,000건)",
+  "training": "fine-tuning (klue/roberta-base 멀티태스크) / scratch (TF-IDF + Logistic Regression 베이스라인)",
+  "models": "Baseline: TF-IDF(char 2-4) + Logistic Regression | Proposed: KLUE-RoBERTa multitask (8 aspect heads + overall head)",
+  "primary_metric": "test aspect-averaged Macro-F1 (LLM labels): KLUE-RoBERTa multitask 0.623 (service model) / aspect-only 0.641 / baseline 0.492; mention-detection F1 0.825; overall(recommend) Macro-F1 0.851"
+}
